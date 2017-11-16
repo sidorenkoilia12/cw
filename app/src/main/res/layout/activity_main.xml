@@ -27,6 +27,14 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="123dp"
-        android:text="Тест Айзенка" />
+        android:text="@string/button_aizenka" />
+
+    <Button
+        android:id="@+id/button_profession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_aizenka"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button_profession" />
 
 </RelativeLayout>

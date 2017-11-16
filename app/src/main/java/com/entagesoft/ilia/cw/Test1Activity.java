@@ -133,9 +133,6 @@ public class Test1Activity extends AppCompatActivity {
                     lie++;
                 }
             }
-
-
-            Boolean q = a.get(12);
         }
     }
 }

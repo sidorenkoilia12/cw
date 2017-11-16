@@ -11,12 +11,15 @@ public class greetingActivity extends AppCompatActivity {
 
     Button start;
     TextView textView;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_greeting);
 
         start = findViewById(R.id.button);
+        textView = findViewById(R.id.textView2);
+
 
         switch(getIntent().getIntExtra("TestName", 0)) {
 
@@ -41,8 +44,28 @@ public class greetingActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplicationContext(), Test1Activity.class);
-                startActivity(intent);
+                switch(getIntent().getIntExtra("TestName", 0)) {
+
+                    case 0:
+
+                        textView.setText("error 2");
+                        break;
+
+                    case 1:
+
+                        intent = new Intent(getApplicationContext(), Test1Activity.class);
+                        startActivity(intent);
+                        break;
+
+                    case 2:
+
+                        intent = new Intent(getApplicationContext(), Test2Activity.class);
+                        startActivity(intent);
+                        break;
+
+                }
+
+
             }
         });
     }
