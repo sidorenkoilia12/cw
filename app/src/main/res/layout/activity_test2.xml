@@ -7,6 +7,17 @@
     android:orientation="vertical"
     tools:context="com.entagesoft.ilia.cw.Test2Activity">
 
+    <Button
+        android:id="@+id/plusMinusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/plusButton"
+        android:layout_alignBottom="@+id/plusButton"
+        android:layout_centerHorizontal="true"
+        android:text="+ -"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
     <TextView
         android:id="@+id/numTextView"
         android:layout_width="wrap_content"
@@ -32,9 +43,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="46dp"
-        android:layout_marginStart="26dp"
-        android:layout_toEndOf="@+id/numTextView"
+        android:layout_marginBottom="45dp"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/plusMinusButton"
         android:text="-"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -43,9 +54,9 @@
         android:id="@+id/plusButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/minusButton"
-        android:layout_marginEnd="42dp"
+        android:layout_alignBaseline="@+id/minusButton"
+        android:layout_alignBottom="@+id/minusButton"
+        android:layout_toEndOf="@+id/plusMinusButton"
         android:text="+"
         android:textSize="30sp"
         android:textStyle="bold" />
