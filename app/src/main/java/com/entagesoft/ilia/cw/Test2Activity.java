@@ -107,7 +107,7 @@ public class Test2Activity extends AppCompatActivity {
                 }
                 else {
 
-                    answers.put(i, true);
+                    //answers.put(i, true);
                     i++;
                     questionTextView.setText(questions[i]);
                     int l = i + 1;
